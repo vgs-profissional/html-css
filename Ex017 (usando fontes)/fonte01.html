@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        /*3 opções de fonte, Helvetica pra caso ñ aceite Arial, e Sans Serif pra caso n aceite as duas. 
+          Sans serif vai por qualquer fonte Sans-serif que o dispositivo aceitar.
+        */
+        body {
+            font-family: "Work Sans", Arial, Helvetica, sans-serif;
+            /*
+            Medias Absolutas
+            cm, mm, in, px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            rem = em do root (body ou *)
+            */
+            font-size: 1em;
+            font-weight: 600;
+            /*Lighter normal bold bolder*/
+            font-style: none;
+            text-decoration: none;
+        }
+
+        h1 {
+            /*font-family: "Work Sans", sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            
+            shorthand font
+            ordem: font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic, bolder, 3em, "Work Sans", sans-serif;
+        }
+
+        /*Não lembrava que dava pra selecionar duas tags assim mas da, que mega daora.*/
+        /*h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }*/
+    </style>
+
+</head>
+
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum atque deserunt rerum dolorum explicabo alias eius
+        placeat, iure obcaecati reiciendis nobis eligendi vel recusandae? Maxime accusamus ab hic natus neque?
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni error quibusdam dicta quia at repellendus
+        architecto officiis. Harum ratione, recusandae natus dolor alias incidunt quasi, sequi delectus necessitatibus
+        odio sit!
+    </p>
+    <h2>Subtítulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque ex perspiciatis, ratione doloremque, illum
+        explicabo cum autem optio itaque impedit ullam molestiae fugiat a ab vel fugit odio? Accusantium?
+    </p>
+</body>
+
+</html>

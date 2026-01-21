@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        /* Vários tipos de display, flexbox é daora bagarai */
+        /* Display Inline-level */
+        a {
+            padding: 10px 5px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(193, 126, 25);
+        }
+        /* box-level */
+        h1 { 
+            /* Pode criar 3 linahs pra escrever isso ou só abreviar assim, se chama shorthand */
+            outline: 5px dashed saddlebrown;
+            /* margin: auto para alinhar Caixas no centro da tela, text-align para texto*/
+            margin: 20px auto 40px auto;
+            padding: 20px 20px;
+            border: 10px solid rgb(234, 184, 123);
+            /* É shorthand para:
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(234, 184, 123); 
+            */
+            background-color: bisque;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a>
+        Vamos ver como tudo isso funciona.</p>
+</body>
+
+</html>

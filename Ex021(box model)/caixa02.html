@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(181, 79, 6);
+        }
+
+        nav {
+            background-color: rgb(126, 56, 6);
+            padding: 3px;
+            border-radius: 7px;
+            text-align: center;
+            box-shadow: 3px 4px 0px 0px rgba(0, 0, 0, 0.551);
+        }
+
+        header,
+        main,
+        footer {
+            border-radius: 20px;
+            background-color: chocolate;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        header {
+            text-align: center;
+
+        }
+
+        main {
+            /* Shorthand pra mexer em vertíces específicos da borda */
+            border-radius: 10px 40px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: rgb(247, 137, 59);
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        /* Selecionando uma tag dentro de outra tag com id específico 
+        pra não afetar outras tags */
+        section>article>aside {
+            background-color: rgb(126, 56, 6);
+            padding: 0px 7px;
+            border-radius: 7px;
+        }
+
+        section>article>aside>p {
+            padding: 5px 0px;
+            color: rgb(247, 137, 59);
+        }
+
+        footer {
+            background-color: rgb(108, 46, 2);
+            color: rgb(247, 137, 59);
+            text-align: center;
+            padding: 1px;
+            margin: 10px;
+        }
+
+        .sombra {
+            box-shadow: 3px 4px 0px 0px rgba(0, 0, 0, 0.551);
+        }
+
+        div#bola {
+            /* É assim que faz bola usando borda
+            caixa quadrada -> border-radius 50% = bola */
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: chocolate;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">#1</a>
+            <a href="#">#2</a>
+            <a href="#">#3</a>
+            <a href="#">#4</a>
+        </nav>
+    </header>
+    <!-- Pode por tag dentro de tag a vontade, 
+     inclusive se incentiva a fazer isso pq é bom pra semântica-->
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Esportes, jogos e Competições</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus nihil ipsa
+                    reprehenderit qui debitis iusto quasi modi, distinctio accusantium facilis sapiente, nemo porro.
+                    Deserunt molestiae ut dolorem alias ipsa.</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi asperiores, illum voluptatibus,
+                    laboriosam expedita nihil ipsa sunt minima optio saepe iste dignissimos quisquam quis explicabo quia
+                    officiis tempore reiciendis.</p>
+                <aside class="sombra">
+                    <p>Artigo escrito por mim mesmo</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer class="sombra">
+        <p>Desenvolvido por Vini.</p>
+    </footer>
+    <div id="bola"></div>
+
+</body>
+
+</html>

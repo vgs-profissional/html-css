@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML 5</title>
+</head>
+
+<body>
+    <h1>Inserindo Vídeos hospedados localmente </h1>
+    <p>Este vídeo está hospedado eno meu próprio servidor</p>
+    <video controls width="560" height="315" poster="imagem/thumb-daora.png">
+        <source src="midia/Meu-Video-Drift-mp4.mp4" type="video/mp4">
+        <source src="midia/Meu-Video-Drift-mkv.mkv" type="video/mp4">
+        <source src="midia/Meu-Video-Drift-webm.webm" type="video/webm">
+        <source src="midia/meu-video-drift-ogv.ogv" type="video/ogg">
+        <p>Seu vídeo não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <h1>Inserindo vídeos do youtube</h1>
+    <p>Doakes bicudo</p>
+    <!--Youtube: Não ideal para vídeos privados-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kIte0CuJZ5E?si=5w0QlNYWMyY8lsg6"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do vimeo</h1>
+    <p>Essa música é mt boa</p>
+    <!--Vimeo: melhor qualidade mas trava um pouquinho em pc fraco-->
+    <iframe src="https://player.vimeo.com/video/45719036?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        width="560" height="315" frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" title="Metallica - Enter Sandman"></iframe>
+    <h1>Inserindo vídeos da Twitch</h1>
+    <p>Essa live foi maneira</p>
+
+    <div id="twitch-embed"></div>
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+            video: "2553997149"
+        });
+    </script>
+    <h1>Inserindo vídeos do tiktok</h1>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@smahospitalkichijoji/video/7149097168404581633"
+        data-video-id="7149097168404581633" style="max-width: 605px;min-width: 325px;">
+        <section> <a target="_blank" title="@smahospitalkichijoji"
+                href="https://www.tiktok.com/@smahospitalkichijoji?refer=embed">@smahospitalkichijoji</a>
+            動作確認などの時間を除けば、じつは1分以内に交換できる3DSの〇〇！！3DSの修理も行ってます〜〜！！<a title="3ds" target="_blank"
+                href="https://www.tiktok.com/tag/3ds?refer=embed">#3ds</a> <a title="任天堂3ds" target="_blank"
+                href="https://www.tiktok.com/tag/%E4%BB%BB%E5%A4%A9%E5%A0%823ds?refer=embed">#任天堂3ds</a> <a
+                title="任天堂3dsサービス終了" target="_blank"
+                href="https://www.tiktok.com/tag/%E4%BB%BB%E5%A4%A9%E5%A0%823ds%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E7%B5%82%E4%BA%86?refer=embed">#任天堂3dsサービス終了</a>
+            <a title="任天堂" target="_blank"
+                href="https://www.tiktok.com/tag/%E4%BB%BB%E5%A4%A9%E5%A0%82?refer=embed">#任天堂</a> <a title="ニンテンドーds"
+                target="_blank"
+                href="https://www.tiktok.com/tag/%E3%83%8B%E3%83%B3%E3%83%86%E3%83%B3%E3%83%89%E3%83%BCds?refer=embed">#ニンテンドーds</a>
+            <a title="修理" target="_blank" href="https://www.tiktok.com/tag/%E4%BF%AE%E7%90%86?refer=embed">#修理</a> <a
+                target="_blank" title="♬ オリジナル楽曲 - ネジクマ - スマホスピタル吉祥寺"
+                href="https://www.tiktok.com/music/オリジナル楽曲-ネジクマ-7149097212125907713?refer=embed">♬ オリジナル楽曲 - ネジクマ -
+                スマホスピタル吉祥寺</a> </section>
+    </blockquote>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+
+</html>
