@@ -17,7 +17,7 @@
 /* Ainda precisa criar o font face pra poder por na variável */
 @font-face {
     font-family: idroid;
-    src: url(/HTML-e-CSS/HTML\ e\ CSS/Desafios/Modulo2/pacote-projeto-d010/fontes/idroid/IDroid.otf);
+    src: url(/projeto-android/fontes/idroid/IDroid.otf);
     font-weight: normal;
 }
 
@@ -27,13 +27,13 @@
 }
 
 body {
-    margin: 0;
+    width: fit-content;
+    margin: auto;
     padding: 0;
     background-color: var(--cor3);
 }
 
 header {
-
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     padding: 16px 60px;
 }
@@ -76,18 +76,6 @@ nav>a:hover {
     border-radius: 5px;
 }
 
-h3 {
-    background-image: linear-gradient(to right, var(--cor1), white);
-}
-
-h2,
-h3 {
-    font-family: var(--fonte3);
-    color: var(--cor5);
-    padding: 0 10px;
-
-}
-
 main {
     background-color: white;
     justify-items: center;
@@ -98,22 +86,59 @@ main {
     min-width: 500px;
 }
 
+aside {
+    background-color: var(--cor1);
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fonte3);
+    color: var(--cor5);
+    padding: 0 10px;
+}
+
+h3 {
+    background-image: linear-gradient(to right, var(--cor1), white);
+}
+
 p {
     padding: 0 1em;
     line-height: 2em;
 }
 
-
 article>h2 {
     margin-top: 1px;
     width: 100%;
-
 }
 
-aside {
-    background-color: var(--cor1);
-    border-radius: 20px;
-    padding-bottom: 10px;
+img {
+    /* border-radius: 360px;  Dá pra por borda em imagem*/
+    margin: auto;
+    display: block;
+}
+
+.imagem,
+.video {
+    text-align: center;
+}
+
+.fundo-video {
+    background-color: var(--cor6);
+    padding: 20px 1em;
+    margin: 0 -1em;
+    position: relative;
+    padding-bottom: 56%;
+}
+
+iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside>p {
@@ -159,6 +184,7 @@ footer {
     padding: 1px;
     margin-top: 10px;
     background-color: var(--cor6);
+
 }
 
 /* > para todos p aninhados no footer
@@ -169,31 +195,6 @@ footer>p>strong {
     color: white;
 }
 
-img {
-    margin: auto;
-    display: block;
-}
-
-.imagem,
-.video {
-    text-align: center;
-}
-
-.fundo-video {
-    background-color: var(--cor6);
-    padding: 20px 1em;
-    margin: 0 -1em;
-    position: relative;
-    padding-bottom: 56%;
-}
-
-iframe {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
 
 a {
     color: var(--cor5);
