@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização dos fundos</title>
+    <style>
+        body {
+            background-image: url(Imagens/wallpaper001.jpg);
+            /*Da prá usar até url de sites duh*/
+            background-size: 100px;
+            /*Define o tamanho da imagem no fundo, faz repetir ela se for mt pequena, e n é afetada pelo viewport*/
+            background-repeat: repeat;
+            /*Repetição da imagem, com espaço, round?, unset?,no eixo x ou y e não repetir*/
+        }
+
+        .bloco {
+            background-image: url(Imagens/pattern003.png);
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quadrado1 {
+            background-color: inherit;
+            /* inherit faz o bloco herdar da tag acima dele */
+            width: 60px;
+            height: 60px;
+            border: 1px solid black;
+        }
+
+        .quadrado2 {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            background-image: inherit;
+        }
+
+        h3,
+        h2,
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Teste de aplicação de fundos</h1>
+    <!-- <a href="mailto:pimenos1virgula14e2@gmail.com">meu email</a> Atalho pra direcionar um email -->
+    <div class="bloco">
+        <h1>Não herdou</h1>
+        <div class="quadrado1">
+            <h3>herdou da div</h3>
+        </div>
+    </div>
+    <div class="quadrado2">
+        <h2>Herdou fundo do site todo</h2>
+    </div>
+</body>
+
+</html>
