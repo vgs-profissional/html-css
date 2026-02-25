@@ -14,13 +14,13 @@ Lista para cada Exercício
 <a href='https://vgs-profissional.github.io/html-css/Ex010 (links)/index.html'>Exercício 010 (Links)<a>  
 <a href='https://vgs-profissional.github.io/html-css/Ex011 (midias em html5)/'>Exercício 011 (Mídias em HTML5)<a>  
 <a href='https://vgs-profissional.github.io/html-css/Ex012 (videos em html5)/'>Exercício 012 (Vídeos em HTML5)<a>  
-<a href='https://vgs-profissional.github.io/html-css/Ex013 (estilos inline)/'>Exercício 013 (Estilos inline)<a>  
-<a href='https://vgs-profissional.github.io/html-css/Ex014 (estilos internos)/'>Exercício 014 (Estilos internos)<a>  
+<a href='https://vgs-profissional.github.io/html-css/Ex013 (estilos inline)/index.html'>Exercício 013 (Estilos inline)<a>  
+<a href='https://vgs-profissional.github.io/html-css/Ex014 (estilos internos)/index.html'>Exercício 014 (Estilos internos)<a>  
 <a href='https://vgs-profissional.github.io/html-css/Ex015 (estilos externos)/Index.html'>Exercício 015 (Estilos externos)<a>   
 <a href='https://vgs-profissional.github.io/html-css/Ex016 (cores)/cor01.html'>Exercício 016 (Cores)<a>  
 <a href='https://vgs-profissional.github.io/html-css/Ex017 (usando fontes)/fonte01.html'>Exercício 017 (Usando fontes)<a>  
 <a href='https://vgs-profissional.github.io/html-css/Ex018 (fonte de fontes)/fonte01.html'>Exercício 018 (Fonte de fontes)<a>  
 <a href='https://vgs-profissional.github.io/html-css/Ex019(seletores 1)/seletor01.html'>Exercício 019 (Seletores 1)<a>  
 <a href='https://vgs-profissional.github.io/html-css/Ex020 (seletores 2)/hover.html'>Exercício 020 (Seletores 2)<a>  
-<a href='https://vgs-profissional.github.io/html-css/Ex021(box model)/caixa01.html'>Exercício 021 (Box model)<a>  
+<a href='https://vgs-profissional.github.io/html-css/Ex021(box model)/Caixa01.html'>Exercício 021 (Box model)<a>  
 <a href='https://vgs-profissional.github.io/html-css/Ex022/fundo001.html'>Exercício 022<a>  
