@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
     <style>
-
         /* Seletores personalizados
             # = id
             . = class
@@ -45,7 +44,7 @@
             background-color: rgb(85, 0, 255);
         }
 
-        
+
         .especial::before {
             content: ' ⇒';
         }
@@ -56,13 +55,16 @@
             text-decoration: none;
             color: darkgray;
         }
+
         /* Isso funciona */
-        .especial:hover::after /*,.especial:hover::before*/ {
+        .especial:hover::after
+
+        /*,.especial:hover::before*/
+            {
             content: ' [link]';
             text-decoration: none;
             color: black;
         }
-
     </style>
 </head>
 
@@ -73,6 +75,7 @@
         <li><a href="https://www.youtube.com/c/CursoemVídeo" class="especial">Canal do Youtube</a></li>
         <li><a href="https://www.cursoemvideo.com/apoie">Site do CursoEmVídeo</a></li>
     </ul>
+    <a href="hover.html">Página 1</a><a href="pseudo-classe.html">Página 3</a>
 </body>
 
 </html>
