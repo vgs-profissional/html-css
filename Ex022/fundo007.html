@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            position: relative;
+            height: 96vh;
+            background-color: brown;
+            background-image: url(Imagens/target001.png);
+            background-size: 100% 100%;
+            padding: 10px;
+        }
+
+        #conteudo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 400px;
+            height: 200px;
+
+            background-color: blue;
+            background-image: url(Imagens/target001.png);
+            background-size: 100% 100%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="container">
+        <article id="conteudo"></article>
+    </section>
+    <!-- <h1>Posição</h1>
+    <p>O container tem por padrão posição relativa</p>
+    <p>O conteúdo tem por padrão posição absoluta</p> -->
+</body>
+
+</html>
