@@ -18,15 +18,16 @@
 header {
     color: white;
     background-color: black;
-    padding: 3.5em 0;
+    padding: 3.5em 5em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-h2 {
+section>p {
+    font-size: x-large;
+    font-weight: 600;
     width: 15em;
-    padding: 0 0 0 0.5em;
     display: flex;
     justify-content: center;
 }
@@ -89,9 +90,14 @@ header>p {
     background-image: url(imagens/background002.jpg);
 }
 
+.estrofe3 {
+    padding: 4em 0 4em 3em;
+}
+
 .texto_fundo {
     background-color: rgba(0, 0, 0, 0.308);
     padding: 2em 0 2em 1em;
+    border-radius: 10px;
 }
 
 footer {
@@ -106,6 +112,7 @@ footer {
 footer>p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
+    padding: 0 0 0 1em;
 }
 
 footer>p>a {
