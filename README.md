@@ -24,4 +24,4 @@ Lista para cada Exercício
 <a href='https://vgs-profissional.github.io/html-css/Ex020 (seletores 2)/hover.html'>Exercício 020 (Seletores 2)<a>  
 <a href='https://vgs-profissional.github.io/html-css/Ex021(box model)/Caixa01.html'>Exercício 021 (Box model)<a>  
 <a href='https://vgs-profissional.github.io/html-css/Ex022/fundo001.html'>Exercício 022<a>
-<a href='https://vgs-profissional.github.io/html-css/Desafios/Modulo2/pacote-d012/D012-cordel.html'>  
+<a href='https://vgs-profissional.github.io/html-css/Desafios/Modulo2/pacote-d012/D012-cordel.html'>Teste site cordel<a>
