@@ -15,6 +15,11 @@
     font-style: normal;
 }
 
+html,
+body {
+    min-height: 100vh;
+}
+
 header {
     color: white;
     background-color: black;
@@ -35,6 +40,7 @@ section>p {
 header>h1 {
     font-family: 'Passion One';
     font-size: 4.5em;
+    /* font-variant: small-caps; Muda entre Maiuscula e minuscula do elemento selecionado */
 }
 
 header>p {
@@ -49,48 +55,49 @@ header>p {
     font-size: larger;
 }
 
-.link_titulo:hover {
+.link_titulo:hover,
+footer p a:hover {
     color: rgb(76, 76, 223);
+    text-decoration: underline;
 }
 
-.estrofe1,
-.estrofe3,
-.estrofe5 {
+.normal {
     background-color: white;
 
     font-size: large;
     font-family: 'sriracha';
 
-    padding: 4em 0px 4em 0;
+    padding: 4vh 0;
 
     display: flex;
     justify-content: space-around;
 }
 
-.estrofe2,
-.estrofe4 {
+.imagem {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: lightgray;
     color: white;
 
     font-family: 'sriracha';
     font-size: large;
 
-    padding: 4em 0px 4em 0;
+    padding: 4vh 0;
+
     display: flex;
     justify-content: space-around;
 }
 
-.estrofe2 {
+.prim {
     background-image: url(imagens/background001.jpg);
 }
 
-.estrofe4 {
+.seg {
     background-image: url(imagens/background002.jpg);
 }
 
-.estrofe3 {
+.normal {
     padding: 4em 0 4em 3em;
 }
 
@@ -120,8 +127,4 @@ footer>p>a {
     text-decoration: none;
     color: white;
     font-size: larger;
-}
-
-footer>p>a:hover {
-    color: rgb(76, 76, 223);
 }
