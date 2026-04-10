@@ -35,17 +35,18 @@ section>p {
     width: 15em;
     display: flex;
     justify-content: center;
+
 }
 
 header>h1 {
     font-family: 'Passion One';
-    font-size: 4.5em;
+    font-size: 8.5vw;
     /* font-variant: small-caps; Muda entre Maiuscula e minuscula do elemento selecionado */
 }
 
 header>p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 3.5vw;
 }
 
 .link_titulo {
@@ -77,23 +78,28 @@ footer p a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     background-color: lightgray;
+    
     color: white;
-
     font-family: 'sriracha';
     font-size: large;
-
+    box-shadow: inset 5px 5px 15px 0px rgba(0, 0, 0, 0.767);
     padding: 4vh 0;
 
     display: flex;
     justify-content: space-around;
 }
 
-.prim {
+#img01 {
     background-image: url(imagens/background001.jpg);
 }
 
-.seg {
+.hard {
+    padding-left: 1em;
+}
+
+#img02 {
     background-image: url(imagens/background002.jpg);
 }
 
@@ -105,6 +111,10 @@ footer p a:hover {
     background-color: rgba(0, 0, 0, 0.308);
     padding: 2em 0 2em 1em;
     border-radius: 10px;
+}
+
+.txt_fundo_branco {
+    padding-right: 2em;
 }
 
 footer {
