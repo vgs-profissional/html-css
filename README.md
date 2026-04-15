@@ -1,4 +1,9 @@
 <!-- # Curso HTML e CSS -->
+ <style>
+    ol {
+        display: flex;
+    }
+ </style>
 <h1>Lista de exercícios</h1>
 
 <h2>Módulo 1 (1-15)</h2>
