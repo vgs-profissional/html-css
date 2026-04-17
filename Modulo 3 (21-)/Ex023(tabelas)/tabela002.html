@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            position: relative;
+            border-collapse: collapse;
+            width: 350px;
+            height: 200px;
+        }
+
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(129, 186, 235);
+        }
+
+        thead,
+        tfoot {
+            background-color: rgb(129, 186, 235);
+        }
+
+        td,
+        th {
+            text-align: center;
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        tbody>tr:nth-child(2n) {
+            background-color: rgb(225, 239, 252);
+            /* text-decoration: underline; */
+            /* font-weight: bold; */
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 25px;
+            background-color: rgb(185, 219, 248);
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+        Anatomia para tabelas grandes 
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <!-- <th></th> -->
+                <th scope="col" style="width: 250px;">Estado</th>
+                <th scope="col" style="width: 250px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- (tr>td{$}+td+td[type=number])*27 
+            Atalho bom pra fazer tags dentro de tags com conteúdo 
+            mais outras tags e uma com tipo
+             -->
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">46 081 801</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">21 393 441</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">17 223 547</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="number">14 870 907</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="number">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="number">11 233 263</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="number">9 562 007</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="number">9 268 836</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="number">8 711 196</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="number">8 187 029</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="number">7 423 629</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="number">7 018 211</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="number">4 321 616</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="number">4 164 468</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="number">4 126 854</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="number">3 893 659</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="number">3 455 236</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="number">3 384 547</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="number">3 220 848</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="number">2 996 899</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="number">2 924 631</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="number">2 299 425</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="number">1 751 950</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="number">1 586 859</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="number">884 372</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="number">806 517</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="number">738 772</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th> <!--Th pq aqui é titulo, mas vai ficar do lado de um td-->
+                <td>213 421 037</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Escopo</h2>
+    <p><code>scope='col'</code> Tem valor na semântica, os algoritmos do google que analisam o conteúdo do site buscam
+        por esse tipo de
+        especificação</p>
+    <h2>Caption</h2>
+    <p>Também serve pra semântica, o algoritmo entende que a tabela é bem estruturada e pensada</p>
+    <h2>Efeito zebrado</h2>
+    <p>Usando a pseudo-classe <code>tr:nth-child()</code> e passando 2n pra ele, ele aplica o estilo a cada 2 elementos
+    </p>
+    <p>Também pode ser odd pra ser ímpar ou even pra par</p>
+    <h2>Cabeçalho fixado</h2>
+    <p>Dá pra deixar o cabeçalho fixado se deixar a tabela com posição relativa e o table head como sticky</p>
+    <p>Ainda assim o fundo não vai junto, então tem que por de novo a cor do fundo, e fica legal se por
+        <code>top: -1px</code> pq assim ele cola no topo
+    </p>
+</body>
+
+</html>
